@@ -3,6 +3,7 @@
 Generate Pascal's Triangle and print it
 """
 
+
 def pascal_triangle(n):
     """
     Returns a list of lists representing Pascal’s triangle of n
@@ -24,6 +25,7 @@ def pascal_triangle(n):
 
     return triangle
 
+
 def print_triangle(triangle):
     """
     Print the triangle
@@ -31,6 +33,6 @@ def print_triangle(triangle):
     for row in triangle:
         print("[{}]".format(",".join(str(x) for x in row)))
 
+
 if __name__ == "__main__":
-    # Change the number here to test different sizes
     print_triangle(pascal_triangle(5))
